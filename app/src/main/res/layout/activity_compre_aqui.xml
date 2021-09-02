@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_compre_aqui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#54BDD6"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#54BDD6"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/grupo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbida"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="só ida" />
+
+            <RadioButton
+                android:id="@+id/rbambos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="ida e volta" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Viajar de" />
+
+        <View
+            android:layout_width="44dp"
+            android:layout_height="46dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="para" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/sporigem"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:drawSelectorOnTop="true" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorPrimary"
+            app:srcCompat="@drawable/seta" />
+
+        <Spinner
+            android:id="@+id/sppara"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:drawSelectorOnTop="true" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="#54BDD6"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Data (ida)" />
+
+        <View
+            android:layout_width="44dp"
+            android:layout_height="46dp" />
+
+        <TextView
+            android:id="@+id/tDataVolta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data (volta)" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/eddata1"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary" />
+
+        <View
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <EditText
+            android:id="@+id/eddata2"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="#54BDD6"></View>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_marginLeft="20dp"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:paddingLeft="@android:dimen/app_icon_size"
+        android:paddingBottom="@android:dimen/app_icon_size"
+        android:rowCount="3">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:text="Adultos" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:text="Crianças" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:text="Bebês" />
+
+        <Spinner
+            android:id="@+id/spadulto"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:background="@color/colorPrimary" />
+
+        <Spinner
+            android:id="@+id/spcrianca"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:background="@color/colorPrimary" />
+
+        <Spinner
+            android:id="@+id/spbebe"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:background="@color/colorPrimary" />
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btnagoravai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Compre Aqui" />
+</LinearLayout>

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">VoeLog</string>
+    <string name="btnbusca">Button</string>
 </resources>

@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/btnCadastro"
         android:layout_width="180dp"
         android:layout_height="36dp"
         android:layout_marginTop="44dp"
@@ -22,9 +22,10 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnCompreAqui"
         android:layout_width="107dp"
         android:layout_height="57dp"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="44dp"
         android:shadowColor="#000000"
         android:text="Cadastre-se"
@@ -33,12 +34,13 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+        app:layout_constraintVertical_bias="0.058" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="263dp"
-        android:layout_height="161dp"
+        android:layout_width="206dp"
+        android:layout_height="119dp"
         android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,7 +56,7 @@
         android:text="Nome:"
         android:textColor="#000000"
         app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/btnCadastro" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
@@ -65,8 +67,8 @@
         android:backgroundTint="#FFFFFF"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/btnCadastro"
+        app:layout_constraintStart_toStartOf="@+id/btnCadastro"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
@@ -152,5 +154,16 @@
         app:layout_constraintEnd_toEndOf="@+id/editTextPhone"
         app:layout_constraintStart_toStartOf="@+id/editTextPhone"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <Button
+        android:id="@+id/btnLista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="ver cliente"
+        app:layout_constraintEnd_toEndOf="@+id/btnCompreAqui"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnCompreAqui"
+        app:layout_constraintTop_toBottomOf="@+id/btnCompreAqui" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
