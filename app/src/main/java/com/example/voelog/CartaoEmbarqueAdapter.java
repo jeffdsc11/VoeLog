@@ -38,7 +38,7 @@ public class CartaoEmbarqueAdapter extends BaseAdapter {
 
 
     private class ViewHolder{
-        TextView txtorigem, txtdestino,txtida,txtvolta;
+        TextView txtorigem, txtdestino,txtida,txtvolta,txtStatus,txtCodigoID,txtadulto,txtcrianca,txtbebe;
     }
 
     @Override
@@ -54,6 +54,11 @@ public class CartaoEmbarqueAdapter extends BaseAdapter {
             holder.txtdestino = (TextView) row.findViewById(R.id.txtdestino);
             holder.txtida = (TextView)row.findViewById(R.id.txtida);
             holder.txtvolta = (TextView) row.findViewById(R.id.txtvolta);
+            holder.txtStatus = (TextView) row.findViewById(R.id.txtStatus);
+            holder.txtCodigoID = (TextView)row.findViewById(R.id.txtCodigoID);
+            holder.txtadulto=(TextView)row.findViewById(R.id.txtAdulto);
+            holder.txtcrianca=(TextView)row.findViewById(R.id.txtCrianca);
+            holder.txtbebe=(TextView)row.findViewById(R.id.txtBebe);
             row.setTag(holder);
         }else{
             holder = (ViewHolder) row.getTag();
@@ -64,6 +69,11 @@ public class CartaoEmbarqueAdapter extends BaseAdapter {
         holder.txtdestino.setText(cartaoEmbarque.getDestino());
         holder.txtida.setText(cartaoEmbarque.getIda());
         holder.txtvolta.setText(cartaoEmbarque.getVolta());
+        holder.txtStatus.setText(cartaoEmbarque.getStatus());
+        holder.txtCodigoID.setText(cartaoEmbarque.getIdentificador());
+        holder.txtadulto.setText(cartaoEmbarque.getAdulto());
+        holder.txtcrianca.setText(cartaoEmbarque.getCrianca());
+        holder.txtbebe.setText(cartaoEmbarque.getBebe());
 
 
         return row;

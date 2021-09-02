@@ -17,6 +17,7 @@ import java.util.ArrayList;
 public class TelaCartaoEmbarque extends AppCompatActivity {
     private SQLiteDatabase bancoDados;
     Button btnbusca;
+    int telaCartao;
     String saida = "";
     EditText edtbuscaid;
     ArrayList listId = new ArrayList<String>();
@@ -33,6 +34,7 @@ public class TelaCartaoEmbarque extends AppCompatActivity {
                 //  Toast.makeText(getApplicationContext(), "Compra Efetuada", Toast.LENGTH_SHORT).show();
                 saida= edtbuscaid.getText().toString();
                 buscaID();
+
 
             }
         });
@@ -55,17 +57,17 @@ public class TelaCartaoEmbarque extends AppCompatActivity {
                 if(saida.equals(identificador) ){
 
                     Intent intent = new Intent(TelaCartaoEmbarque.this,CartaoEmbarqueList.class);
+                    Bundle params = new Bundle();
+                    params.putString("id",saida);
+                    intent.putExtras(params);
                     startActivity(intent);
-                    //Bundle params = new Bundle();
-                   // params.putString("id",saida);
-                   // intent.putExtras(params);
                     break;
-                }else {
+                }else if(cursor.isLast()){
                     AlertDialog.Builder builder2 = new AlertDialog.Builder(this);
                     //define o titulo
                     builder2.setTitle("Erro");
                     //define a mensagem
-                    builder2.setMessage("Código Identificador não encontrado!");
+                    builder2.setMessage("Codigo Verificador inexistente!");
                     builder2.show();
 
                 }

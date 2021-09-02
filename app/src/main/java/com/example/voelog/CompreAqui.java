@@ -30,6 +30,7 @@ public class CompreAqui extends AppCompatActivity implements View.OnClickListene
     ArrayAdapter<String> adaptador2;
     String aeroportos[] = {"GRU Guarulhos","PVH Gov.JorgeTeixeira","CGH Congonhas", "BSB Brasilia","CGB Cuiabá","FOR Fortaleza"};
     String numeros[] = {"0","1","2","3"};
+    int status= 0;
     int qtadulto=0;
     int qtcrianca=0;
     int qtbebe=0;
@@ -206,7 +207,7 @@ public class CompreAqui extends AppCompatActivity implements View.OnClickListene
             bdpassagem.execSQL("CREATE TABLE IF NOT EXISTS passagem("+
                     " id INTEGER PRIMARY KEY AUTOINCREMENT" +
                     ",identificador VARCHAR"+", ida INTEGER" + ", origem VARCHAR"+",destino VARCHAR"+
-                    ",adulto INTEGER"+",crianca INTEGER"+", bebe INTEGER"+",dataida VARCHAR"+",datavolta VARCHAR)");
+                    ",adulto INTEGER"+",crianca INTEGER"+", bebe INTEGER"+",dataida VARCHAR"+",datavolta VARCHAR"+",status INTEGER)");
             bdpassagem.close();
         }catch (Exception e){
             e.printStackTrace();
@@ -216,7 +217,7 @@ public class CompreAqui extends AppCompatActivity implements View.OnClickListene
 
             try{
                 bdpassagem = openOrCreateDatabase("teste", MODE_PRIVATE,null);
-                String sql= "INSERT INTO passagem (identificador,ida,origem,destino,adulto,crianca,bebe,dataida,datavolta) VALUES (?,?,?,?,?,?,?,?,?)";
+                String sql= "INSERT INTO passagem (identificador,ida,origem,destino,adulto,crianca,bebe,dataida,datavolta,status) VALUES (?,?,?,?,?,?,?,?,?,?)";
                 SQLiteStatement stmt = bdpassagem.compileStatement(sql);
                 stmt.bindString(1,id);
                 stmt.bindLong(2,idavolta);
@@ -227,6 +228,7 @@ public class CompreAqui extends AppCompatActivity implements View.OnClickListene
                 stmt.bindString(7,quantbebe);
                 stmt.bindString(8,dataIda);
                 stmt.bindString(9,dataVolta);
+                stmt.bindLong(10,status);
                 stmt.executeInsert();
                 bdpassagem.close();
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);

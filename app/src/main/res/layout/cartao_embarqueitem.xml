@@ -6,20 +6,21 @@
     android:layout_height="match_parent">
 
 
-
     <View
-        android:layout_width="match_parent"
-        android:layout_height="123dp"
+        android:layout_width="390dp"
+        android:layout_height="177dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:background="#00BCD4">
 
     </View>
 
+
+
     <View
         android:id="@+id/view"
         android:layout_width="wrap_content"
-        android:layout_height="97dp"
+        android:layout_height="150dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
@@ -31,20 +32,21 @@
 
     </View>
 
+
     <View
-        android:layout_width="7dp"
-        android:layout_height="123dp"
+        android:layout_width="137dp"
+        android:layout_height="19dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="269dp"
-        android:layout_marginTop="-7dp"
-        android:background="#00BCD4"
-        android:rotation="30" />
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="17dp"
+        android:background="#00BCD4">
+
+    </View>
 
     <View
         android:layout_width="7dp"
-        android:layout_height="123dp"
+        android:layout_height="180dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
@@ -53,15 +55,60 @@
         android:background="#00BCD4"
         android:rotation="30" />
 
-    <TextView
-        android:id="@+id/txtorigem"
-        android:layout_width="95dp"
-        android:layout_height="41dp"
+    <View
+        android:layout_width="7dp"
+        android:layout_height="180dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="15dp"
-        android:text="TextView" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="268dp"
+        android:layout_marginTop="-6dp"
+        android:background="#00BCD4"
+        android:rotation="30" />
+
+    <View
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="272dp"
+        android:layout_marginTop="86dp"
+        android:background="#00BCD4" />
+
+    <TextView
+        android:id="@+id/txtCrianca"
+        android:layout_width="23dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="111dp"
+        android:layout_marginEnd="65dp"
+        android:text="TextView"
+        android:textAlignment="center" />
+
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="111dp"
+        android:layout_marginEnd="89dp"
+        android:text="Criança:" />
+
+
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="137dp"
+        android:layout_marginEnd="89dp"
+        android:text="Bebê:" />
 
     <TextView
         android:id="@+id/txtdestino"
@@ -71,19 +118,9 @@
         android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="23dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="149dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="146dp"
         android:layout_toEndOf="@+id/imageView5"
-        android:text="TextView" />
-
-    <TextView
-        android:id="@+id/txtida"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="49dp"
-        android:layout_marginTop="63dp"
         android:text="TextView" />
 
     <TextView
@@ -92,8 +129,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="62dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="96dp"
         android:text="Ida:" />
 
     <TextView
@@ -102,8 +139,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="130dp"
-        android:layout_marginTop="63dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="97dp"
         android:text="Volta:" />
 
     <TextView
@@ -113,8 +150,18 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="170dp"
-        android:layout_marginTop="63dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="97dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/txtorigem"
+        android:layout_width="95dp"
+        android:layout_height="41dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="49dp"
         android:text="TextView" />
 
     <ImageView
@@ -123,9 +170,92 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="122dp"
-        android:layout_marginTop="17dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="51dp"
         app:srcCompat="@android:drawable/ic_media_play" />
+
+    <TextView
+        android:id="@+id/txtida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="97dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="18dp"
+        android:text="Status Check-In: " />
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="18dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="87dp"
+        android:layout_marginEnd="89dp"
+        android:text="Adulto:" />
+
+    <TextView
+        android:id="@+id/txtAdulto"
+        android:layout_width="21dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="87dp"
+        android:layout_marginEnd="65dp"
+        android:text="TextView"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/txtBebe"
+        android:layout_width="21dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="65dp"
+        android:text="TextView"
+        android:textAlignment="center" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="29dp"
+        android:layout_height="17dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="18dp"
+        app:srcCompat="@drawable/cartao_de_embarque" />
+
+    <TextView
+        android:id="@+id/txtCodigoID"
+        android:layout_width="72dp"
+        android:layout_height="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="38dp"
+        android:text="TextView"
+        android:textSize="20sp" />
 
 
 </RelativeLayout>

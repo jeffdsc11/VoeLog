@@ -10,6 +10,7 @@ import android.widget.Button;
 public class MainActivity2 extends AppCompatActivity {
     public Button btnCompreAqui;
     public Button btnTelaEmbarque;
+    public Button btnCheckIn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +28,14 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getBaseContext(),TelaCartaoEmbarque.class);
+                startActivity(intent);
+            }
+        });
+        btnCheckIn = findViewById(R.id.btnCheckIn);
+        btnCheckIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getBaseContext(),Check_in.class);
                 startActivity(intent);
             }
         });
